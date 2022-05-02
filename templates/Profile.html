@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Pinchoq - Profile</title>
+	  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+	<body>
+			<section class="form-profile">
+				<div class="head">
+					<img src="{{ url_for('static', filename='IMAGE/logo.png') }}">
+					<h3 class="title">¡Bienvenido!</h3>
+					<h2 class="title">Perfil de la cuenta</h2>
+				</div>
+				
+				<div class="dato">
+					<label>
+						<h1>Nombres: {{ name }}</h1>
+					</label>
+
+				</div>
+				
+				<div class="dato">
+					<label>
+						<h1>Apellidos: {{ lastname }}</h1>
+					</label>
+				</div>
+				
+				<div class="dato">
+					<label>
+						<h1>Correo: {{ correo }}</h1>
+					</label>
+				</div>
+				
+				<div class="dato">
+					<label>
+						<h1>Nombre de Usuario: {{ usua }}</h1>
+					</label>
+				</div>
+				
+				<div class="dato">
+					<label>
+						<h1>Fecha de nacimiento: {{ bday }}</h1>
+					</label>
+				</div>
+				
+				<div class="dato">
+					<label>
+						<h1>Sexo: {{ sex }} </h1>
+					</label>
+				</div>
+				
+			</section>
+		</form>
+	</body>
+</html>

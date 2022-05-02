@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resgistrarte - Pinchoq </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+		
+	</head>
+	<body>
+		<form action="{{ url_for('Profile') }}" method="post">
+			<section class="form-register">
+				<div class="head">
+					<img src="{{ url_for('static', filename='IMAGE/logo.png') }}">
+					<h3 class="title">¡Bienvenido!</h3>
+					<h2 class="title">Regístrate Gratis</h2>
+				</div>
+				<div class="form">
+					<label>
+						<h1>Ingresa tus nombres</h1>
+					</label>
+					<input class="contorls" type="text" name='nombre' placeholder="Introduce tus nombres">
+				</div>
+				<div class="form">
+					<label>
+						<h1>Ingresa tus apellidos</h1>
+					</label>
+					<input class="contorls" type="text" name='apellidos' placeholder="Introduce tus apellidos">
+				</div>
+					
+				<div class="form">
+					<label>
+						<h1>¿Cuál es tu correo?</h1>
+					</label>
+					<input class="contorls" type="email" name='correo' placeholder="¿Cuál es tu correo?">
+				</div>
+				
+				<div class="form">
+					<label>
+						<h1>Ingresa una contraseña</h1>
+					</label>
+					<input class="contorls" type="password" name='contra' placeholder="Crea una contraseña">
+				</div>
+				
+				<div class="form">
+					<label>
+						<h1>Ingresa un nombre de usuario</h1>
+					</label>
+					<input class="contorls" type="text" name='us' placeholder="Introduce un nombre de usuario">
+				</div>
+				
+				
+				<div class="form">
+					<label>
+						<h1>¿Cuándo es tu fecha de nacimiento?</h1>
+					</label>
+					<input class="contorls" type="date" name='fn' id="Ingresa tu fecha de cumpleaños">
+				</div>
+				
+				
+				<div class="ftl">
+					<label>
+						<h1>¿Cuál es tu sexo?</h1>
+					</label>
+					<input type="radio" name="sexo" value="Hombre" /> Hombre
+					<input type="radio" name="sexo" value="Mujer" /> Mujer
+					<input type="radio" name="sexo" value="No Binario" /> No Binario
+				</div>
+				
+				<p> Estoy de acuerdo con <a href="#"> terminos y condicciones </a></p>
+				<button class="btn">Register</button>
+				<p> ¿Ya tienes cuenta? <a href="#">Inicio sesion</a></p>
+			</section>
+		</form>
+	</body>
+</html>
